@@ -4,22 +4,22 @@ pipeline {
     stages {
         stage('create') {
             steps {
-                message 'check, verify'
+                echo 'check, verify'
             }
         }
         stage('build') {
             steps {
-                message 'artifacts build'
+                echo 'artifacts build'
             }
         }
         stage('deploy') {
             steps {
-                message 'deployment'
+                echo 'deployment'
             }
         }
         stage('test') {
             input {
-                message 'About to test the application'
+                echo 'About to test the application'
                 ok 'Ok'
             }
             steps {
