@@ -19,7 +19,7 @@ pipeline {
         }
         stage('test') {
             input {
-                echo 'About to test the application'
+                message 'About to test the application'
                 ok 'Ok'
             }
             steps {
