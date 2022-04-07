@@ -1,7 +1,6 @@
 pipeline {
-    agent {
-        none
-    }
+    agent { label 'master' }
+    
     stages {
         stage('create') {
             steps {
